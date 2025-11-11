@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF محول - أدوات PDF مجانية 100% | أسرع موقع عربي لتحويل الملفات</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="أفضل موقع عربي مجاني لتحويل الملفات من وإلى PDF. دعم Word, Excel, PowerPoint, صور, TXT. سريع, آمن, متجاوب مع الجوال. بدون تسجيل أو حدود.">
+    <meta name="keywords" content="تحويل pdf, pdf محول, convert to pdf, word to pdf, pdf to word, أدوات pdf مجانية">
+    <meta name="author" content="PDF محول">
+    <link rel="canonical" href="https://pdf-mohawwal.com">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PDF محول - أدوات PDF مجانية وسريعة">
+    <meta property="og:description" content="حوّل ملفاتك من وإلى PDF بسرعة وأمان. موقع عربي 100% مجاني.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pdf-mohawwal.com">
+    <meta property="og:image" content="https://pdf-mohawwal.com/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google AdSense Script (ضعه هنا) -->
+    <!--
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_ADSENSE_CLIENT_ID" crossorigin="anonymous"></script>
+    -->
+    
+    <!-- Google Analytics -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_GA_ID');
+    </script>
+    -->
+    
+    <style>
+        :root {
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --accent-color: #f59e0b;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --bg-light: #f8f9fa;
+            --bg-white: #ffffff;
+            --border-color: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.1);
+            --shadow-sm: 0 5px 15px rgba(0,0,0,0.08);
+            --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        /* ==================== إعلان الهيدر #1 ==================== */
+        .ad-header-top {
+            background: #f0f0f0;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ccc;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+        }
+        .ad-header-top p {
+            padding: 10px;
+        }
+
+        /* ==================== الهيدر الرئيسي ==================== */
+        .main-header {
+            background: var(--bg-white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--primary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-color);
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        /* ==================== إعلان تحت الهيدر #2 ==================== */
+        .ad-under-header {
+            background: #f0f0f0;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ccc;
+            margin: 15px auto;
+            max-width: 970px;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+        }
+
+        /* ==================== قسم البطل (Hero) ==================== */
+        .hero-section {
+            background: var(--gradient);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* ==================== إعلان مدمج في المحتوى #3 ==================== */
+        .ad-in-content {
+            background: #f9f9f9;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ccc;
+            margin: 30px auto;
+            max-width: 300px;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            border-radius: 8px;
+        }
+
+        /* ==================== القسم الرئيسي (محتوى + إعلانات جانبية) ==================== */
+        .main-wrapper {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content-area {
+            flex: 1;
+        }
+
+        /* ==================== إعلان الشريط الجانبي #4, #5, #6 ==================== */
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .ad-sidebar-top,
+        .ad-sidebar-middle,
+        .ad-sidebar-bottom {
+            background: #f9f9f9;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ccc;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            border-radius: 8px;
+        }
+
+        .ad-sidebar-middle {
+            min-height: 600px; /* Large skyscraper ad */
+        }
+
+        /* ==================== أدوات التحويل ==================== */
+        .tools-section {
+            padding: 60px 0;
+            background: var(--bg-white);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: var(--text-dark);
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .tool-card {
+            background: var(--bg-light);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-sm);
+            border-color: var(--primary-color);
+        }
+
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--gradient);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tool-card:hover::before {
+            opacity: 1;
+        }
+
+        .tool-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .tool-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .tool-card p {
+            color: var(--text-light);
+            font-size: 13px;
+        }
+
+        /* ==================== ميزات الموقع ==================== */
+        .features-section {
+            padding: 60px 0;
+            background: var(--bg-light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .feature-icon {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .feature-item h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .feature-item p {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        /* ==================== إعلان قبل الفوتر #7 ==================== -->
+        .ad-before-footer {
+            background: #f9f9f9;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ccc;
+            margin: 30px auto;
+            max-width: 970px;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+        }
+
+        /* ==================== الفوتر ==================== */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* ==================== Responsive ==================== */
+        @media (max-width: 1024px) {
+            .main-wrapper {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                position: static;
+                top: auto;
+                order: 2; /* Sidebar goes after content on mobile */
+            }
+            
+            .ad-sidebar-top,
+            .ad-sidebar-middle,
+            .ad-sidebar-bottom {
+                min-height: 100px;
+                max-width: 300px;
+                margin: 10px auto;
+            }
+            
+            .ad-sidebar-middle {
+                min-height: 250px;
+            }
+            
+            .hero-title {
+                font-size: 32px;
+            }
+            
+            .ad-header-top,
+            .ad-under-header {
+                margin: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 16px;
+            }
+        }
+
+        /* ==================== Print Styles (لحفظ كـ PDF) ==================== */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .ad-header-top,
+            .ad-under-header,
+            .ad-in-content,
+            .ad-sidebar-top,
+            .ad-sidebar-middle,
+            .ad-sidebar-bottom,
+            .ad-before-footer {
+                display: none !important; /* إخفاء الإعلانات عند الطباعة */
+            }
+            
+            .hero-section {
+                background: white !important;
+                color: black !important;
+            }
+            
+            .hero-title,
+            .hero-subtitle {
+                text-shadow: none !important;
+                color: black !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- ============================================ -->
+    <!--  ====== المساحة الإعلانية رقم 1: الهيدر ======  -->
+    <!--  الحجم: 970×90 بكسل (Leaderboard Banner)     -->
+    <!-- ============================================ -->
+    <div class="ad-header-top container">
+        <p>
+            📢 <strong>مساحة إعلانية #1</strong><br>
+            الحجم الموصى به: <code>970×90</code> أو <code>728×90</code><br>
+            المكان: أعلى الموقع مباشرة (أعلى visibility)<br>
+            <small>انسخ كود Google AdSense هنا أو أي إعلان آخر</small>
+        </p>
+        <!--
+        <script>
+            // كود Google AdSense النموذجي:
+            // <ins class="adsbygoogle"
+            //      style="display:inline-block;width:970px;height:90px"
+            //      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+            //      data-ad-slot="XXXXXXXXXX"></ins>
+            // <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </script>
+        -->
+    </div>
+
+    <!-- ==================== الهيدر الرئيسي ==================== -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                </svg>
+                <span>PDF محول</span>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#tools">الأدوات</a></li>
+                    <li><a href="#features">المميزات</a></li>
+                    <li><a href="#about">عن الموقع</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- ====== المساحة الإعلانية رقم 2: تحت الهيدر ====== -->
+    <!-- الحجم: 970×90 بكسل (Leaderboard Banner)    -->
+    <!-- ============================================ -->
+    <div class="ad-under-header container">
+        <p>
+            📢 <strong>مساحة إعلانية #2</strong><br>
+            الحجم: <code>970×90</code><br>
+            المكان: بعد الهيدر مباشرة<br>
+            <small>مكان ممتاز للإعلانات العالية الأداء</small>
+        </p>
+    </div>
+
+    <!-- ==================== قسم البطل (Hero) ==================== -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">أدوات PDF مجانية 100% وبسيطة</h1>
+            <p class="hero-subtitle">حوّل ملفاتك من وإلى PDF بسرعة وأمان. بدون تسجيل، بدون حدود، وبدون إعلانات مزعجة.</p>
+            <a href="#tools" class="cta-button">ابدأ التحويل الآن</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ====== المساحة الإعلانية رقم 3: مدمجة في المحتوى ====== -->
+    <!-- الحجم: 300×250 بكسل (Medium Rectangle)     -->
+    <!-- ============================================ -->
+    <div class="ad-in-content container">
+        <p>
+            📢 <strong>مساحة إعلانية #3</strong><br>
+            الحجم: <code>300×250</code><br>
+            المكان: داخل المحتوى الرئيسي<br>
+            <small>مثالي للإعلانات المتجاوبة</small>
+        </p>
+    </div>
+
+    <!-- ==================== القسم الرئيسي المحتوى + Sidebar ==================== -->
+    <div class="main-wrapper container">
+        
+        <!-- ========== المحتوى الرئيسي ========== -->
+        <main class="content-area">
+            
+            <section id="tools" class="tools-section">
+                <h2 class="section-title">🛠️ جميع أدوات التحويل</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">📄➡️📃</div>
+                        <h3>PDF إلى Word</h3>
+                        <p>تحويل سريع مع الحفاظ على التنسيق بالضبط. الملفات الناتجة قابلة للتعديل.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">📃➡️📄</div>
+                        <h3>Word إلى PDF</h3>
+                        <p>حوّل DOC/DOCX إلى PDF بجودة عالية. الحجم الصغير محفوظ.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">📄➡️📊</div>
+                        <h3>PDF إلى Excel</h3>
+                        <p>استخراج الجداول والبيانات إلى XLSX. دعم للغة العربية.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">📊➡️📄</div>
+                        <h3>Excel إلى PDF</h3>
+                        <p>حوّل جداول Excel إلى PDF بدون تشوهات. حفاظ على التنسيق.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">📄➡️🖼️</div>
+                        <h3>PDF إلى صور</h3>
+                        <p>حوّل كل صفحة إلى JPG أو PNG. جودة عالية وسرعة فائقة.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🖼️➡️📄</div>
+                        <h3>صور إلى PDF</h3>
+                        <p>اجمع الصور (JPG, PNG, GIF) في ملف PDF واحد. اضغط الحجم.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">📄➡️🔒</div>
+                        <h3>حماية PDF</h3>
+                        <p>أضف كلمة مرور لملفات PDF أو أزل الحماية بسهولة.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🔗📄</div>
+                        <h3>دمج PDF</h3>
+                        <p>اجمع عدة ملفات PDF في ملف واحد. ترتيب بالسحب والإفلات.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">✂️📄</div>
+                        <h3>تقسيم PDF</h3>
+                        <p>اقتطع صفحات أو قسم الملف إلى أجزاء. تحكم كامل.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🔒📄</div>
+                        <h3>فك حماية PDF</h3>
+                        <p>أزل كلمات المرور من ملفات PDF المحمية. سريع وآمن.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">📄🔄</div>
+                        <h3>ضغط PDF</h3>
+                        <p>قلل حجم ملفات PDF بنسبة تصل إلى 70%. بدون فقدان الجودة.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">📄✨</div>
+                        <h3>تحسين PDF</h3>
+                        <p>حسّن جودة ملفات PDF للطباعة أو للويب. أداة احترافية.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="features-section">
+                <h2 class="section-title">⭐ لماذا تختار موقعنا؟</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <div>
+                            <h4>سرعة فائقة</h4>
+                            <p>تحويل فوري للملفات في ثوانٍ معدودة. لا انتظار، لا تأخير.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <div>
+                            <h4>أمان تام</h4>
+                            <p>جميع الملفات تُحذف تلقائياً بعد 60 دقيقة. خصوصيتك محفوظة 100%.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌍</div>
+                        <div>
+                            <h4>دعم كامل بالعربية</h4>
+                            <p>واجهة عربية 100% مع دعم RTL. مصمم خصيصاً للمستخدم العربي.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📱</div>
+                        <div>
+                            <h4>متجاوب مع كل الأجهزة</h4>
+                            <p>يعمل بكفاءة على الموبايل، التابلت، والكمبيوتر. في أي وقت، من أي مكان.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💯</div>
+                        <div>
+                            <h4>دقة 99%</h4>
+                            <p>نحافظ على تنسيق الملفات الأصلي. دعم كامل للغة العربية والخطوط.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💰</div>
+                        <div>
+                            <h4>100% مجاني</h4>
+                            <p>لا اشتراكات، لا رسوم خفية، لا حدود استخدام. موقع مجاني تماماً.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" style="padding: 40px 0;">
+                <h2 class="section-title">📖 عن الموقع</h2>
+                <div style="background: var(--bg-light); padding: 30px; border-radius: 10px;">
+                    <p style="font-size: 16px; color: var(--text-dark); margin-bottom: 15px;">
+                        <strong>PDF محول</strong> هو موقع عربي متخصص في تقديم أدوات PDF مجانية وسريعة. تم إنشاؤه لخدمة المستخدم العربي والمؤسسات في المملكة العربية السعودية ودول الخليج والعالم العربي.
+                    </p>
+                    <p style="font-size: 14px; color: var(--text-light);">
+                        نهدف إلى توفير تجربة سريعة وآمنة لتحويل الملفات بدون الحاجة إلى برامج معقدة أو اشتراكات مدفوعة. جميع أدواتنا تعمل في المتصفح مباشرة وتحترم خصوصية بياناتك.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ========== الشريط الجانبي (Sidebar) ========== -->
+        <aside class="sidebar">
+            <!-- ============================================ -->
+            <!-- ====== المساحة الإعلانية رقم 4: أعلى السايدبار ====== -->
+            <!-- الحجم: 300×250 بكسل (Medium Rectangle)     -->
+            <!-- ============================================ -->
+            <div class="ad-sidebar-top">
+                <p>
+                    📢 <strong>إعلان #4</strong><br>
+                    الحجم: <code>300×250</code><br>
+                    مكان: أعلى الشريط الجانبي
+                </p>
+            </div>
+            
+            <!-- ============================================ -->
+            <!-- ====== المساحة الإعلانية رقم 5: سكاي سكريبر ====== -->
+            <!-- الحجم: 300×600 بكسل (Skyscraper)          -->
+            <!-- ============================================ -->
+            <div class="ad-sidebar-middle">
+                <p>
+                    📢 <strong>إعلان #5 (كبير)</strong><br>
+                    الحجم: <code>300×600</code><br>
+                    مكان: وسط الشريط الجانبي<br>
+                    <strong>أفضل أداء لـ AdSense</strong>
+                </p>
+            </div>
+            
+            <!-- ============================================ -->
+            <!-- ====== المساحة الإعلانية رقم 6: أسفل السايدبار ====== -->
+            <!-- الحجم: 300×250 بكسل (Medium Rectangle)     -->
+            <!-- ============================================ -->
+            <div class="ad-sidebar-bottom">
+                <p>
+                    📢 <strong>إعلان #6</strong><br>
+                    الحجم: <code>300×250</code><br>
+                    مكان: أسفل الشريط الجانبي
+                </p>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ====== المساحة الإعلانية رقم 7: قبل الفوتر ====== -->
+    <!-- الحجم: 970×250 بكسل (Large Banner)       -->
+    <!-- ============================================ -->
+    <div class="ad-before-footer container">
+        <p>
+            📢 <strong>مساحة إعلانية #7</strong><br>
+            الحجم: <code>970×250</code><br>
+            مكان: قبل الفوتر مباشرة<br>
+            <strong>أعلى CPM على الموقع</strong>
+        </p>
+    </div>
+
+    <!-- ==================== الفوتر ==================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 PDF محول. جميع الحقوق محفوظة.</p>
+            <ul class="footer-links">
+                <li><a href="#privacy">سياسة الخصوصية</a></li>
+                <li><a href="#terms">الشروط والأحكام</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+                <li><a href="#about">من نحن</a></li>
+            </ul>
+            <p class="copyright">موقع مجاني 100% لتحويل ملفات PDF | خدمة سريعة وآمنة</p>
+        </div>
+    </footer>
+
+    <!-- ==================== تعليمات الإعلانات (غير مرئية) ==================== -->
+    <div style="display: none;">
+        <!-- 
+        ============================================
+        تعليمات وضع إعلانات Google AdSense:
+        
+        1. أنشئ حساب Google AdSense من: adsense.google.com
+        2. أضف موقعك وانتظر الموافقة
+        3. أنشئ "وحدة إعلانية" جديدة لكل مكان:
+           - المكان 1 & 2 (الهيدر): حجم 970×90
+           - المكان 3 (داخل المحتوى): 300×250
+           - المكان 4 & 6 (السايدبار): 300×250
+           - المكان 5 (السايدبار الكبير): 300×600
+           - المكان 7 (قبل الفوتر): 970×250
+        
+        4. انسخ كود JavaScript وضعه في المكان المحدد
+        5. استبدل الكود التجريبي بالكود الحقيقي
+        
+        نموذج الكود:
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:970px;height:90px"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        ============================================
+        -->
+    </div>
+
+    <!-- ==================== سكريبتات JavaScript ==================== -->
+    <!-- 
+    ملاحظة: التحويل الفعلي للملفات يتطلب:
+    1. Backend (Node.js + Express) أو
+    2. JavaScript libraries في المتصفح (مثل pdf-lib, docx-pdf, mammoth.js)
+    يمكنك إضافة هذه المكتبات وربطها بأزرار الأدوات
+    -->
+</body>
+</html>
